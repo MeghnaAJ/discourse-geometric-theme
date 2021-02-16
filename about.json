@@ -1,0 +1,23 @@
+{
+  "name": "discourse-geometric-theme",
+  "about_url": "",
+  "license_url": "",
+  "author": "Meghna",
+  "assets": {
+    "texture": "assets/geometric.jpg"
+  },
+  "color_schemes": {
+    "geometric": {
+      "primary": "ffffff",
+      "secondary": "3F3F3F",
+      "tertiary": "ffffff",
+      "quaternary": "575151",
+      "header_background": "262833",
+      "header_primary": "262833",
+      "highlight": "000000",
+      "danger": "da723c",
+      "love": "91091e"
+    }
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}

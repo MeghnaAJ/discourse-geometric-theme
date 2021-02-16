@@ -1,0 +1,194 @@
+@import 'variables';
+
+body {
+  background: url($texture);
+  background-attachment: fixed;
+  background-size: 1096px;
+}
+
+// Header
+// *------------------------------------------------*
+.d-header {
+//  background-color: $color-yellow;
+  background-image: $header-gradient;
+  height: 5em;
+}
+
+.menu-panel {
+  border-radius: $radius-6;
+  background-color: $color-grey;
+  .panel-body-bottom .btn:hover {
+    background: $color-red;
+  }
+  li a.widget-link .d-icon, .menu-panel li a.categories-link .d-icon {
+    color: $color-red;
+  }
+}
+
+// New Topic Button
+// *------------------------------------------------*
+#create-topic {
+  color: $color-white;
+  background-color: $color-red;
+  border-radius: $radius-2;
+  .fa {
+    color: $color-white;
+  }
+  &:hover {
+    background: $color-red;
+    color: $color-white;
+    border-radius: $radius-2;
+    box-shadow: 0 1px 8px $color-red;
+    .fa {
+      color: $color-white;
+    }
+  }
+}
+
+// Container
+// *------------------------------------------------*
+#main-outlet {
+  margin-top: 42px;
+  margin-bottom: 50px;
+  border-radius: $radius-10;
+  background: $secondary;
+}
+
+// Buttons
+// *------------------------------------------------*
+.btn {
+  background: $primary-low;
+  color: $color-white;
+  border-radius: $radius-6;
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      color: $color-white;
+      background: $color-red;
+      .d-icon {
+        color: $color-white;
+      }
+    }
+  }
+  &:hover, 
+  &.btn-hover {
+    color: $color-white;
+    background: $color-red;
+    .d-icon {
+      color: $color-red;
+    }
+  }
+  &:active, 
+  &.btn-active {
+    background-image: none;
+    background-color: $color-red;
+    color: $color-white;
+    .d-icon {
+      color: $color-white;
+    }
+  } 
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $color-white;
+  .d-icon {
+    color: $color-white;
+  }
+  &:active, 
+  &.btn-active {
+    .d-icon {
+      color: $color-white;
+    }
+  } 
+  .discourse-no-touch & {
+    &:hover, 
+    &.btn-hover {
+      background-color: $danger-hover;
+      color: $color-cream;
+      .d-icon {
+        color: $color-cream;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  .d-icon {
+    color: $color-white;
+  }
+}
+
+.select-kit.dropdown-select-box .dropdown-select-box-header {
+  border: 1px solid $primary-low;
+}
+
+// Modal
+// *------------------------------------------------*
+.modal-inner-container {
+  border-radius: $radius-4;
+}
+
+.list-controls .combo-box .combo-box-header {
+  border: 0;
+  background: none;
+}
+
+ul.nav-pills {
+  padding-left: 10px;
+}
+
+// Topic Page
+// *------------------------------------------------*
+.timeline-container .topic-timeline { 
+  .timeline-scrollarea {
+    border-color: $color-cream;
+  }
+  .timeline-handle {
+    background-color: $color-cream;
+  }
+}
+
+.post-stream .names .username {
+  font-size: 1.1em;
+}
+
+// User Page
+// *------------------------------------------------*
+.user-content {
+  background: transparent;
+}
+
+// Advanced Search
+// *------------------------------------------------*
+.search-container .search-advanced-sidebar {
+  .search-advanced-title {
+    background: $header-gradient;
+  }
+}
+
+// Admin
+// *------------------------------------------------*
+.admin-controls {
+  .nav-pills>li a.active {
+    background: none;
+    color: $color-red;
+  }
+}
+
+// Other
+// *------------------------------------------------*
+a, .fps-result a.search-link:visited .topic-title {
+  color: $color-yellow;
+  &:hover {
+  color: $color-yellow;
+  }
+}
+
+a:visited {
+  color: $color-yellow;
+}
+
+.open .grippie {
+  background: $header-gradient;
+}

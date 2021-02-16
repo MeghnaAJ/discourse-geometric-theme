@@ -1,0 +1,29 @@
+@import "variables";
+
+// Container
+// *------------------------------------------------*
+#main-outlet {
+  margin-top: 42px;
+  margin-bottom: 50px;
+  border-radius: $radius-10;
+  width: 75%;
+  max-width: 1030px;
+  padding: 3em 3em 5%;
+  padding-bottom: 5% !important;  
+  background: $secondary;
+}
+
+// Navigation Bar
+// *------------------------------------------------*
+.nav-pills li a {  
+  &.active {
+    font-weight: 500;
+    color: $color-white;
+    background: none;
+    border-bottom: 2px solid $color-red;
+  }
+  &:hover {
+    background-color: $color-red;
+    color: $color-white;
+  }
+}
