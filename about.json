@@ -1,7 +1,7 @@
 {
   "name": "discourse-geometric-theme",
-  "about_url": "",
-  "license_url": "",
+  "about_url": "https://meta.discourse.org/t/geometric-a-dark-theme-for-discourse/179927",
+  "license_url": "https://github.com/MeghnaAJ/discourse-geometric-theme/blob/master/LICENSE",
   "author": "Meghna",
   "assets": {
     "texture": "assets/geometric.jpg"
