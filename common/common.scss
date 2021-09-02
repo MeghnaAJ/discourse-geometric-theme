@@ -1,15 +1,27 @@
 @import 'variables';
 
 body {
-  background: url($texture);
   background-attachment: fixed;
   background-size: 1096px;
+  @if $no-background-image == "false" {
+    @if $background-image != "default" {
+      background-image: url($background-image);
+    } @else {
+      background-image: url($texture);
+    }
+    @if $tile-background == "true" {
+      background-size: auto;
+    } @else {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
 }
 
 // Header
 // *------------------------------------------------*
 .d-header {
-//  background-color: $color-yellow;
   background-image: $header-gradient;
   height: 5em;
 }
