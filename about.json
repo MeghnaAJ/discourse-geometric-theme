@@ -4,7 +4,7 @@
   "license_url": "https://github.com/MeghnaAJ/discourse-geometric-theme/blob/master/LICENSE",
   "author": "Meghna",
   "assets": {
-    "texture": "assets/geometric.jpg"
+    "texture": "assets/geometric.png"
   },
   "color_schemes": {
     "geometric": {
